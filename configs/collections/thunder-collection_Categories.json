@@ -1,0 +1,45 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Categories",
+    "collectionId": "79302fbf-9026-4406-93cc-1590ef3c7d0e",
+    "dateExported": "2025-02-18T17:53:51.865Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e6038049-7fbe-49e3-aef2-e301f514e204",
+            "colId": "79302fbf-9026-4406-93cc-1590ef3c7d0e",
+            "containerId": "",
+            "name": "get Category",
+            "url": "http://localhost:3000/MyOpinion/v1/category",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-02-18T17:49:07.842Z",
+            "modified": "2025-02-18T17:49:21.186Z",
+            "headers": []
+        },
+        {
+            "_id": "7f61d103-32b3-4b83-b400-08a75428e2f6",
+            "colId": "79302fbf-9026-4406-93cc-1590ef3c7d0e",
+            "containerId": "",
+            "name": "add Category",
+            "url": "http://localhost:3000/MyOpinion/v1/category",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-18T17:49:38.209Z",
+            "modified": "2025-02-18T17:51:04.181Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YmVhNDk5ZDRiODk3NzViNDAwNTAiLCJpYXQiOjE3Mzk5MDEwMjIsImV4cCI6MTczOTkwNDYyMn0.-v_nBcW1PonTsxEekik0M4EIq5sVObo4_E5--WxiXoc"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Music\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "Qkrn7-7CFlFJJ-eVPLTdUirBTlk-OCkmdVKI2FRUtPbMyAvvQFBN-bvotvLDgZIAoZ7wNYunnZz5QvV8s4rflQ"
+}

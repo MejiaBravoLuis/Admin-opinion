@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "67b4a66b94c2faccaee3f9e1"
+  },
+  "name": "Luis Mejia",
+  "username": "lmejia",
+  "email": "mejia@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$QzfbyOEX49xfCeAEmWtd5Q$d+sBR8FsTzomdobGHWtgjBGYj6JY4ERDGc+ZSi9fUic",
+  "role": "USER",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-18T15:25:31.792Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-18T15:37:41.964Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b4a9f5cc3fefd95841c1ae"
+  },
+  "name": "Usuario Editado",
+  "username": "edited",
+  "email": "bravo@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$x3/yMbvsnB7DDSNEz5DD7g$NMSSPaDpGzHnDRj+wt6yf9u7PTl4v0YgMimtvEsIyhY",
+  "role": "USER",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-18T15:40:37.709Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-18T15:41:25.743Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b4bea499d4b89775b40050"
+  },
+  "name": "Admin",
+  "username": "admin",
+  "email": "admin@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$7/n99eW5cYB9wrYyJQfquw$knanU2TqPccLSmcUXP78lbUb3zmJMwi3zRsPO02p4MY",
+  "role": "ADMIN",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-18T17:08:52.731Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-18T17:08:52.731Z"
+  }
+}]

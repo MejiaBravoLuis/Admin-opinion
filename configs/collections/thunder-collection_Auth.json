@@ -1,0 +1,91 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Auth",
+    "collectionId": "c3dab601-53bd-410b-99fd-d28f59272f17",
+    "dateExported": "2025-02-18T17:53:15.442Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7cab1444-1532-45ba-bcdc-765218d68995",
+            "colId": "c3dab601-53bd-410b-99fd-d28f59272f17",
+            "containerId": "",
+            "name": "Listar usuarios",
+            "url": "http://localhost:3000/MyOpinion/v1/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-02-11T13:15:43.743Z",
+            "modified": "2025-02-18T14:55:04.704Z",
+            "headers": []
+        },
+        {
+            "_id": "154fcacb-1818-4eb0-abe0-03e13f8ae6b8",
+            "colId": "c3dab601-53bd-410b-99fd-d28f59272f17",
+            "containerId": "",
+            "name": "Buscar usuario por id",
+            "url": "http://localhost:3000/MyOpinion/v1/users/findUser/67b494d00d64c7f35f7b2078",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-02-18T14:57:55.266Z",
+            "modified": "2025-02-18T14:58:50.645Z",
+            "headers": []
+        },
+        {
+            "_id": "28aafc4f-7f8e-463c-8c8c-2a93f21ea87f",
+            "colId": "c3dab601-53bd-410b-99fd-d28f59272f17",
+            "containerId": "",
+            "name": "Editar usuario",
+            "url": "http://localhost:3000/MyOpinion/v1/users/update",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2025-02-11T13:23:11.852Z",
+            "modified": "2025-02-18T15:41:25.762Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YTlmNWNjM2ZlZmQ5NTg0MWMxYWUiLCJpYXQiOjE3Mzk4OTMyNDksImV4cCI6MTczOTg5Njg0OX0.XE976gWKy8BW8I0HKQPPYl1KHcPVLGYldIADNyoRkis"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Usuario Editado\",\n    \"username\": \"edited\",\n    \"email\": \"edited@example.com\",\n    \"password\": \"12345678\",\n    \"newPassword\": \"123456789\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4fd1017f-39b5-41b4-b35e-aa326e542098",
+            "colId": "c3dab601-53bd-410b-99fd-d28f59272f17",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://localhost:3000/MyOpinion/v1/auth/register",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2025-02-18T14:04:31.035Z",
+            "modified": "2025-02-18T15:40:37.714Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"name\": \"Pedro Bravo\",\n    \"username\": \"pbravo\",\n    \"email\": \"bravo@example.com\",\n    \"password\": \"12345678\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "514af5ca-fa5f-41c8-a428-16fce3669109",
+            "colId": "c3dab601-53bd-410b-99fd-d28f59272f17",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3000/MyOpinion/v1/auth/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2025-02-18T14:04:47.810Z",
+            "modified": "2025-02-18T16:33:28.053Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"admin123\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "3qZoamYhqzuAyJJE-szNDSK2BbPXPjx7nhtyhEqppLNjjYYt2RO1dlwO1gDQxe0AiIRQjTygLDxzyF9SxXH7og"
+}
