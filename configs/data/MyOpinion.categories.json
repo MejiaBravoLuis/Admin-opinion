@@ -1,13 +1,52 @@
 [{
   "_id": {
-    "$oid": "67b4bb5404456283ca0732e1"
+    "$oid": "67b79d8295a0c0f1225b5764"
   },
   "name": "default",
   "status": true,
   "createdAt": {
-    "$date": "2025-02-18T16:54:44.715Z"
+    "$date": "2025-02-20T21:24:18.459Z"
   },
   "updatedAt": {
-    "$date": "2025-02-18T16:54:44.715Z"
+    "$date": "2025-02-20T21:24:18.459Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b7ab82543598d079348822"
+  },
+  "name": "Music",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-20T22:24:02.712Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-20T22:24:02.712Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b8f92a1ea193d5fffc3fd0"
+  },
+  "name": "Games",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-21T22:07:38.434Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T22:07:38.434Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b9098c84db191c7e0247fb"
+  },
+  "name": "CATEGORY EDITED",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-21T23:17:32.671Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T23:19:26.314Z"
   }
 }]

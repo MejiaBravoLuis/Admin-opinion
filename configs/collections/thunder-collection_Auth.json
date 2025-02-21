@@ -1,84 +1,106 @@
 {
     "clientName": "Thunder Client",
     "collectionName": "Auth",
-    "collectionId": "c3dab601-53bd-410b-99fd-d28f59272f17",
-    "dateExported": "2025-02-18T17:53:15.442Z",
+    "collectionId": "73203f17-be8b-4333-aaf1-0c5e7a2f7e34",
+    "dateExported": "2025-02-21T23:24:18.221Z",
     "version": "1.2",
     "folders": [],
     "requests": [
         {
-            "_id": "7cab1444-1532-45ba-bcdc-765218d68995",
-            "colId": "c3dab601-53bd-410b-99fd-d28f59272f17",
+            "_id": "9cdc10e5-4029-4de8-ab75-b6fb89c542ab",
+            "colId": "73203f17-be8b-4333-aaf1-0c5e7a2f7e34",
             "containerId": "",
             "name": "Listar usuarios",
             "url": "http://localhost:3000/MyOpinion/v1/users",
             "method": "GET",
             "sortNum": 10000,
-            "created": "2025-02-11T13:15:43.743Z",
-            "modified": "2025-02-18T14:55:04.704Z",
+            "created": "2025-02-20T21:39:13.715Z",
+            "modified": "2025-02-20T21:39:32.175Z",
             "headers": []
         },
         {
-            "_id": "154fcacb-1818-4eb0-abe0-03e13f8ae6b8",
-            "colId": "c3dab601-53bd-410b-99fd-d28f59272f17",
+            "_id": "6d638af4-7739-4078-8cb9-b204a61a31a7",
+            "colId": "73203f17-be8b-4333-aaf1-0c5e7a2f7e34",
             "containerId": "",
             "name": "Buscar usuario por id",
             "url": "http://localhost:3000/MyOpinion/v1/users/findUser/67b494d00d64c7f35f7b2078",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2025-02-18T14:57:55.266Z",
-            "modified": "2025-02-18T14:58:50.645Z",
+            "created": "2025-02-20T21:39:58.720Z",
+            "modified": "2025-02-20T21:40:10.483Z",
             "headers": []
         },
         {
-            "_id": "28aafc4f-7f8e-463c-8c8c-2a93f21ea87f",
-            "colId": "c3dab601-53bd-410b-99fd-d28f59272f17",
+            "_id": "a92c982b-e459-4be0-b364-6d63ca6bc728",
+            "colId": "73203f17-be8b-4333-aaf1-0c5e7a2f7e34",
             "containerId": "",
-            "name": "Editar usuario",
+            "name": "Editar usuario ",
             "url": "http://localhost:3000/MyOpinion/v1/users/update",
             "method": "PUT",
-            "sortNum": 30000,
-            "created": "2025-02-11T13:23:11.852Z",
-            "modified": "2025-02-18T15:41:25.762Z",
+            "sortNum": 25000,
+            "created": "2025-02-20T21:44:34.468Z",
+            "modified": "2025-02-20T21:47:29.821Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I0YTlmNWNjM2ZlZmQ5NTg0MWMxYWUiLCJpYXQiOjE3Mzk4OTMyNDksImV4cCI6MTczOTg5Njg0OX0.XE976gWKy8BW8I0HKQPPYl1KHcPVLGYldIADNyoRkis"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YTFhMzk5YzUxMDQ2YjQ3NWNmMmQiLCJpYXQiOjE3NDAwODc3ODQsImV4cCI6MTc0MDA5MTM4NH0.Xk8JvQ6aNM3ORQkVN8BURjaOV14d1ben5t7FdahVsb4"
                 }
             ],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"name\": \"Usuario Editado\",\n    \"username\": \"edited\",\n    \"email\": \"edited@example.com\",\n    \"password\": \"12345678\",\n    \"newPassword\": \"123456789\"\n}",
+                "raw": "{\n  \"name\": \"Luis Mejia\",\n  \"username\": \"lmejia\",\n  \"password\": \"87654321\",\n  \"newPassword\": \"12345678\"\n}",
                 "form": []
             }
         },
         {
-            "_id": "4fd1017f-39b5-41b4-b35e-aa326e542098",
-            "colId": "c3dab601-53bd-410b-99fd-d28f59272f17",
+            "_id": "6dd86645-a018-4bd6-8ef4-0a7148e62c71",
+            "colId": "73203f17-be8b-4333-aaf1-0c5e7a2f7e34",
             "containerId": "",
             "name": "Register",
             "url": "http://localhost:3000/MyOpinion/v1/auth/register",
             "method": "POST",
-            "sortNum": 50000,
-            "created": "2025-02-18T14:04:31.035Z",
-            "modified": "2025-02-18T15:40:37.714Z",
+            "sortNum": 30000,
+            "created": "2025-02-20T21:40:32.462Z",
+            "modified": "2025-02-21T01:43:57.520Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n    \"name\": \"Pedro Bravo\",\n    \"username\": \"pbravo\",\n    \"email\": \"bravo@example.com\",\n    \"password\": \"12345678\"\n}",
+                "raw": "{\n  \"name\": \"Pedro Bravo\",\n  \"username\": \"pbravo\",\n  \"email\": \"bravo@example.com\",\n  \"password\": \"12345678\"\n}",
                 "form": []
             }
         },
         {
-            "_id": "514af5ca-fa5f-41c8-a428-16fce3669109",
-            "colId": "c3dab601-53bd-410b-99fd-d28f59272f17",
+            "_id": "2155c920-5254-46cc-9903-482e2f42207d",
+            "colId": "73203f17-be8b-4333-aaf1-0c5e7a2f7e34",
             "containerId": "",
-            "name": "Login",
+            "name": "login",
+            "url": "http://localhost:3000/MyOpinion/v1/auth/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-02-20T21:42:06.999Z",
+            "modified": "2025-02-21T23:09:47.393Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YTFhMzk5YzUxMDQ2YjQ3NWNmMmQiLCJpYXQiOjE3NDAwODc3ODQsImV4cCI6MTc0MDA5MTM4NH0.Xk8JvQ6aNM3ORQkVN8BURjaOV14d1ben5t7FdahVsb4"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"lmejia\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ab01e34a-de1f-4ac7-b1c2-36e352a2e083",
+            "colId": "73203f17-be8b-4333-aaf1-0c5e7a2f7e34",
+            "containerId": "",
+            "name": "admin login",
             "url": "http://localhost:3000/MyOpinion/v1/auth/login",
             "method": "POST",
             "sortNum": 60000,
-            "created": "2025-02-18T14:04:47.810Z",
-            "modified": "2025-02-18T16:33:28.053Z",
+            "created": "2025-02-20T22:20:08.574Z",
+            "modified": "2025-02-20T22:20:45.164Z",
             "headers": [],
             "body": {
                 "type": "json",
@@ -87,5 +109,5 @@
             }
         }
     ],
-    "ref": "3qZoamYhqzuAyJJE-szNDSK2BbPXPjx7nhtyhEqppLNjjYYt2RO1dlwO1gDQxe0AiIRQjTygLDxzyF9SxXH7og"
+    "ref": "HtHhn2KlFid_UQ3XbHaL8FNH6yjbFvbasAKqE9kXJXMVKi7fPKv0e6LMXjU_9zjz3_0twANNqdYvqFRJRa4H9w"
 }

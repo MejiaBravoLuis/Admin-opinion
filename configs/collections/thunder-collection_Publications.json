@@ -1,0 +1,145 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Publications",
+    "collectionId": "2551cfd6-05c5-4ed5-99d4-136534f08c41",
+    "dateExported": "2025-02-21T23:25:05.552Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "8104b7e5-c102-4a98-b6cf-f789d619b321",
+            "colId": "2551cfd6-05c5-4ed5-99d4-136534f08c41",
+            "containerId": "",
+            "name": "add Publication",
+            "url": "http://localhost:3000/MyOpinion/v1/publication",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-20T23:32:45.982Z",
+            "modified": "2025-02-21T22:56:18.036Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3ZGE1ZDYxNmQ0YWQzN2Q4NTQzNDIiLCJpYXQiOjE3NDAxNzg1MjcsImV4cCI6MTc0MDE4MjEyN30.RogImCaW4aCmcAPR865ycyp8HFzJfoW4fWrv2InrhAk"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Second  publication\",\n  \"ppalText\": \"This is my second publication publication\",\n  \"categoryName\": \"Games\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8558be4f-be32-486d-9026-bf0a30f7b3cb",
+            "colId": "2551cfd6-05c5-4ed5-99d4-136534f08c41",
+            "containerId": "",
+            "name": "edit publication",
+            "url": "http://localhost:3000/MyOpinion/v1/publication/67b903081ea193d5fffc3ff9",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2025-02-20T23:41:30.503Z",
+            "modified": "2025-02-21T22:50:04.631Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YTFhMzk5YzUxMDQ2YjQ3NWNmMmQiLCJpYXQiOjE3NDAxNzgwNDQsImV4cCI6MTc0MDE4MTY0NH0.LVLrJVtzA034Qs7wHFz63qfOs4Ouvr3--t4Kdk4jxOk"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"First publication (edit)\",\n  \"ppalText\": \"This is my first publication (edit)\",\n  \"categoryName\": \"default\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "faf468a6-36cc-41ce-a598-ddca1113a964",
+            "colId": "2551cfd6-05c5-4ed5-99d4-136534f08c41",
+            "containerId": "",
+            "name": "list publications",
+            "url": "http://localhost:3000/MyOpinion/v1/publication",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-02-21T00:05:59.693Z",
+            "modified": "2025-02-21T00:06:22.108Z",
+            "headers": []
+        },
+        {
+            "_id": "4977f1a8-453c-4762-baf2-7550a1f8135b",
+            "colId": "2551cfd6-05c5-4ed5-99d4-136534f08c41",
+            "containerId": "",
+            "name": "delete publication",
+            "url": "http://localhost:3000/MyOpinion/v1/publication/67b903081ea193d5fffc3ff9",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2025-02-21T00:11:28.516Z",
+            "modified": "2025-02-21T22:58:09.764Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YTFhMzk5YzUxMDQ2YjQ3NWNmMmQiLCJpYXQiOjE3NDAxNzg1ODYsImV4cCI6MTc0MDE4MjE4Nn0.H92VubIl5LpQWuSEX9pnD9V4iDnYgtuumJtpErvx5hQ"
+                }
+            ]
+        },
+        {
+            "_id": "a0180474-7d37-4bbb-882f-128f40257db4",
+            "colId": "2551cfd6-05c5-4ed5-99d4-136534f08c41",
+            "containerId": "",
+            "name": "add commit to",
+            "url": "http://localhost:3000/MyOpinion/v1/publication/commit/67b7bc47ad36fefcb3aabcbd",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2025-02-21T01:40:33.837Z",
+            "modified": "2025-02-21T22:56:45.541Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YTFhMzk5YzUxMDQ2YjQ3NWNmMmQiLCJpYXQiOjE3NDAxNzg1ODYsImV4cCI6MTc0MDE4MjE4Nn0.H92VubIl5LpQWuSEX9pnD9V4iDnYgtuumJtpErvx5hQ"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"comment\": \"This is my second commit\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bd9e95c4-84f0-4610-a50f-f960477603a9",
+            "colId": "2551cfd6-05c5-4ed5-99d4-136534f08c41",
+            "containerId": "",
+            "name": "get my commit",
+            "url": "http://localhost:3000/MyOpinion/v1/comments",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2025-02-21T01:48:54.522Z",
+            "modified": "2025-02-21T22:55:36.496Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3ZGE1ZDYxNmQ0YWQzN2Q4NTQzNDIiLCJpYXQiOjE3NDAxNzg1MjcsImV4cCI6MTc0MDE4MjEyN30.RogImCaW4aCmcAPR865ycyp8HFzJfoW4fWrv2InrhAk"
+                }
+            ]
+        },
+        {
+            "_id": "14fb1d79-71b9-4192-9bee-46b4caee9e6f",
+            "colId": "2551cfd6-05c5-4ed5-99d4-136534f08c41",
+            "containerId": "",
+            "name": "edit commit",
+            "url": "http://localhost:3000/MyOpinion/v1/comments/67b7db08031e668492f8a9d6",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2025-02-21T23:02:30.209Z",
+            "modified": "2025-02-21T23:09:58.287Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YTFhMzk5YzUxMDQ2YjQ3NWNmMmQiLCJpYXQiOjE3NDAxNzkzODcsImV4cCI6MTc0MDE4Mjk4N30.AGIBoDhjTldZK-KmaiCqMmmgAH8vetKmSR4YWzqau5w"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"comment\": \"This is my first commit (no edit)\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "r9zBWwsCgpx6xX8YOFUA8_dDTYpCW6QZD59YQuHaJ5Nxz8_EvQpP1NnVnl4bmhaikOr5EKsVa-VcdqBKdNy4Xw"
+}

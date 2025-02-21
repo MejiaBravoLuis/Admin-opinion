@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "67b7bc47ad36fefcb3aabcbd"
+  },
+  "title": "First publication (edit)",
+  "ppalText": "This is my first publication (edit)",
+  "user": {
+    "$oid": "67b7a1a399c51046b475cf2d"
+  },
+  "category": {
+    "$oid": "67b79d8295a0c0f1225b5764"
+  },
+  "comments": [
+    {
+      "$oid": "67b7db08031e668492f8a9d6"
+    },
+    {
+      "$oid": "67b904ad946e5fbe0f83c041"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-20T23:35:35.914Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T22:56:45.534Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b90492946e5fbe0f83c03c"
+  },
+  "title": "Second  publication",
+  "ppalText": "This is my second publication publication",
+  "user": {
+    "$oid": "67b7da5d616d4ad37d854342"
+  },
+  "category": {
+    "$oid": "67b8f92a1ea193d5fffc3fd0"
+  },
+  "comments": [],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-21T22:56:18.018Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-21T22:56:18.018Z"
+  }
+}]
