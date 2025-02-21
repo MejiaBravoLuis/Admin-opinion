@@ -1,4 +1,5 @@
 import Publication from "./publication.model.js";
+import Comment from "../comments/comments.model.js"
 import Category from "../category/category.model.js"
 
 export const getPublication = async (req, res) => {
@@ -154,3 +155,47 @@ export const deletePublication = async (req, res) => {
         })
     }
 }
+
+export const addCommitTo = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { comment } = req.body;
+        const authenticatedUser = req.user;
+
+        if (!authenticatedUser) {
+            return res.status(403).json({
+                success: false, 
+                message: "You are not allowed to commit here"
+            })
+        }
+
+        const publication = await Publication.findById(id);
+        if (!publication) {
+            return res.status(404).json({
+                success: false,
+                message: "Couldn't find the publication"
+            })
+        }
+
+        const newCommit = new Comment ({
+            comment,
+            user: authenticatedUser._id
+        });
+
+        await newCommit.save();
+
+        publication.comments.push(newCommit._id);
+        await publication.save();
+        res.status(200).json({
+            success: true,
+            message: "You've jut commited this publication",
+            comment: newCommit
+        });
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: "Ups, something went wrong trying to commit the publication",
+            error
+        });
+    };
+};

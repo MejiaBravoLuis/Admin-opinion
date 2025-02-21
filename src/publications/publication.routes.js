@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { getPublication, addPublication, updatePublication, deletePublication } from "./publication.controller.js";
+import { getPublication, addPublication, updatePublication, deletePublication, addCommitTo } from "./publication.controller.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
 import { validarJWT } from "../middlewares/validar-jwt.js"
 import { existPublication } from "../helpers/db-validator.js"
@@ -44,6 +44,14 @@ router.delete(
         validarCampos
     ],
     deletePublication
+)
+
+router.post(
+    "/commit/:id",
+    [
+        validarJWT
+    ],
+    addCommitTo
 )
 
 export default router;
