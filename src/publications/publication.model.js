@@ -22,18 +22,18 @@ const PublicationSchema = new Schema(
             required: [true, "User is required"]
         },
         category: {
-            type: Schema.type.ObjectId,
+            type: Schema.Types.ObjectId,
             ref: "Category",
             required: [true, "Add a category"]
         },
         comments: [
             {
                 type: Schema.Types.ObjectId,
-                ref: Comment,
+                ref: "Comment",
             },
         ],
         status: {
-            Boolean: true,
+            type: Boolean,
             default: true
         },
     },

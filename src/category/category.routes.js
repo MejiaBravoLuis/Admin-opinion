@@ -18,7 +18,7 @@ router.post(
     [
         validarJWT,
         tieneRole("ADMIN"),
-        check("name", "The name is required").not().isEmpty,
+        check("name", "The name is required").not().isEmpty(),
         validarCampos
     ],
     addCategory

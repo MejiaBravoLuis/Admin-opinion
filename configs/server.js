@@ -9,6 +9,7 @@ import limiter from '../src/middlewares/validar-cant-peticiones.js';
 import userRoutes from '../src/users/user.routes.js'
 import authRoutes from '../src/auth/auth.routes.js'
 import categoryRoutes from '../src/category/category.routes.js'
+import publicationRoutes from '../src/publications/publication.routes.js'
 
 const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
@@ -23,6 +24,7 @@ const routes = (app) => {
     app.use("/MyOpinion/v1/users", userRoutes);
     app.use("/MyOpinion/v1/auth", authRoutes);
     app.use("/MyOpinion/v1/category", categoryRoutes);
+    app.use("/MyOpinion/v1/publication", publicationRoutes);
 }
 
 const conectarDB = async () => {
