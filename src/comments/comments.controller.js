@@ -38,7 +38,7 @@ export const listMyCommit = async (req, res) => {
     try {
         const userId = req.user._id;
 
-        const comments = await Comment.find({ usr: userId });
+        const comments = await Comment.find({ user: userId });
 
         res.json({
             success: true,
@@ -55,12 +55,12 @@ export const listMyCommit = async (req, res) => {
 export const updtateCommit = async (req, res) => {
     try {
         const { id } = req.params;
-        const userId = req.params._id;
+        const userId = req.user._id;
 
         const comment = await Comment.findOne({ _id : id, user : userId });
 
         if (!comment) {
-            res.status(403).json({
+            return res.status(403).json({
                 success: false,
                 message: "You are not allowed to edit this comment"
             });

@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { addCommit, listMyCommit, updtateCommit, deleteCommit } from "./comments.controller.js";
+import { listMyCommit, updtateCommit, deleteCommit } from "./comments.controller.js";
 import { existCommit } from "../helpers/db-validator.js"
 import { validarCampos } from "../middlewares/validar-campos.js";
 import { validarJWT } from "../middlewares/validar-jwt.js"

@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { addCategory, listCategories, deleteCategory } from "./category.controller.js";
+import { addCategory, listCategories, deleteCategory, updateCategory } from "./category.controller.js";
 import { validarCampos } from "../middlewares/validar-campos.js"
 import { validarJWT } from "../middlewares/validar-jwt.js"
 import { existCategory } from "../helpers/db-validator.js"
@@ -24,7 +24,7 @@ router.post(
     addCategory
 )
 
-/*
+
 router.put(
     "/:id",
     [
@@ -36,7 +36,7 @@ router.put(
     ],
     updateCategory
 )
-*/
+
 
 router.delete(
     "/:id",

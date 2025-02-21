@@ -55,6 +55,40 @@ export const addCategory = async (req, res) => {
     }
 }
 
+export const updateCategory = async (req, res) => {
+    try {
+        
+        const { id } = req.params;
+        const authenticatedUser = req.user;
+
+        if (!authenticatedUser || authenticatedUser.role !== "ADMIN") {
+            return res.status(403).json({
+                success: false,
+                message: "You are not allowed to edit this category"
+            });
+        }
+
+        const updatedCategory = await Category.findByIdAndUpdate(id, req.body, { new: true })
+        if (!updatedCategory) {
+            return res.status(404).json({
+                success: false,
+                message: "Could not find the category"
+            });
+        }
+
+        res.json({
+            success: true,
+            message: "You've just updated the category successfully!!!",
+            category: updateCategory
+        })
+    } catch (error) {
+        res.status(500).json({
+            succes: false,
+            message: "Ups, something went wrong trying to update the category"
+        })
+    }
+}
+
 export const deleteCategory = async (req, res) => {
     try {
         const { id } = req.params

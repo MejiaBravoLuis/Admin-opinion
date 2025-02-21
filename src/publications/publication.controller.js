@@ -9,6 +9,7 @@ export const getPublication = async (req, res) => {
         .populate("user", "name")
         .populate("user", "username")
         .populate("category", "name")
+        .populate({ path: "comments", select: "comment" })
 
         res.json({ 
             success: true,
