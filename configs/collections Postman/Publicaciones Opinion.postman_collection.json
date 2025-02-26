@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "fc14ae6c-c504-4417-9f33-9cf58ae21285",
+		"name": "Publicaciones Opinion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37533644"
+	},
+	"item": [
+		{
+			"name": "Agregar publicación",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNjY5MWU1ZGIyMGU1NjYwY2YxOWEiLCJpYXQiOjE3NDA1MzE3MDcsImV4cCI6MTc0MDUzNTMwN30.SFYzKHu_lirRy4O9WJOyufLnxKyElwFMTcHM9-p1ZjE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Third publication\",\r\n    \"ppalText\": \"This is the third publication\",\r\n    \"categoryName\": \"Photos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/MyOpinion/v1/publication",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"MyOpinion",
+						"v1",
+						"publication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar publicaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/MyOpinion/v1/publication",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"MyOpinion",
+						"v1",
+						"publication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Publicación",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNjY5MWU1ZGIyMGU1NjYwY2YxOWEiLCJpYXQiOjE3NDA1MzE3MDcsImV4cCI6MTc0MDUzNTMwN30.SFYzKHu_lirRy4O9WJOyufLnxKyElwFMTcHM9-p1ZjE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Third publication (EDITADO)\",\r\n    \"ppalText\": \"This is the third publication (EDITADO)\",\r\n    \"categoryName\": \"Music\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/MyOpinion/v1/publication/67be6a8ae5db20e5660cf1d2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"MyOpinion",
+						"v1",
+						"publication",
+						"67be6a8ae5db20e5660cf1d2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar publicación",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JlNjY5MWU1ZGIyMGU1NjYwY2YxOWEiLCJpYXQiOjE3NDA1MzE3MDcsImV4cCI6MTc0MDUzNTMwN30.SFYzKHu_lirRy4O9WJOyufLnxKyElwFMTcHM9-p1ZjE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/MyOpinion/v1/publication/67be6997e5db20e5660cf1be",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"MyOpinion",
+						"v1",
+						"publication",
+						"67be6997e5db20e5660cf1be"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

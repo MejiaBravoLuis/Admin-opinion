@@ -46,4 +46,32 @@
   "updatedAt": {
     "$date": "2025-02-21T22:56:18.018Z"
   }
+},
+{
+  "_id": {
+    "$oid": "67be6a8ae5db20e5660cf1d2"
+  },
+  "title": "Third publication (EDITADO)",
+  "ppalText": "This is the third publication (EDITADO)",
+  "user": {
+    "$oid": "67be6691e5db20e5660cf19a"
+  },
+  "category": {
+    "$oid": "67b7ab82543598d079348822"
+  },
+  "comments": [
+    {
+      "$oid": "67be6b57e5db20e5660cf1e5"
+    },
+    {
+      "$oid": "67be6d87e5db20e5660cf1fe"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-26T01:12:42.087Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T01:25:27.657Z"
+  }
 }]

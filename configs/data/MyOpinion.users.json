@@ -1,51 +1,68 @@
 [{
   "_id": {
-    "$oid": "67b4a66b94c2faccaee3f9e1"
-  },
-  "name": "Luis Mejia",
-  "username": "lmejia",
-  "email": "mejia@example.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$QzfbyOEX49xfCeAEmWtd5Q$d+sBR8FsTzomdobGHWtgjBGYj6JY4ERDGc+ZSi9fUic",
-  "role": "USER",
-  "status": true,
-  "createdAt": {
-    "$date": "2025-02-18T15:25:31.792Z"
-  },
-  "updatedAt": {
-    "$date": "2025-02-18T15:37:41.964Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b4a9f5cc3fefd95841c1ae"
-  },
-  "name": "Usuario Editado",
-  "username": "edited",
-  "email": "bravo@example.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$x3/yMbvsnB7DDSNEz5DD7g$NMSSPaDpGzHnDRj+wt6yf9u7PTl4v0YgMimtvEsIyhY",
-  "role": "USER",
-  "status": true,
-  "createdAt": {
-    "$date": "2025-02-18T15:40:37.709Z"
-  },
-  "updatedAt": {
-    "$date": "2025-02-18T15:41:25.743Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "67b4bea499d4b89775b40050"
+    "$oid": "67b79d8295a0c0f1225b575f"
   },
   "name": "Admin",
   "username": "admin",
   "email": "admin@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$7/n99eW5cYB9wrYyJQfquw$knanU2TqPccLSmcUXP78lbUb3zmJMwi3zRsPO02p4MY",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$bSAAHqFdyayZUQGci2m/Mg$+WwLUtBv3lzdVH8MwyI1l86yaITW4jxdN0h1Y7UdfyA",
   "role": "ADMIN",
   "status": true,
   "createdAt": {
-    "$date": "2025-02-18T17:08:52.731Z"
+    "$date": "2025-02-20T21:24:18.445Z"
   },
   "updatedAt": {
-    "$date": "2025-02-18T17:08:52.731Z"
+    "$date": "2025-02-20T21:24:18.445Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b7a1a399c51046b475cf2d"
+  },
+  "name": "Luis Mejia",
+  "username": "lmejia",
+  "email": "mejia@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$T322NkzrHNiOivdr3IVeDw$DTHwMT9cyAlde1ghc7/sjxmDUikBHG0PV39ffOjzqjY",
+  "role": "USER",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-20T21:41:55.925Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-20T21:47:29.809Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67b7da5d616d4ad37d854342"
+  },
+  "name": "Pedro Bravo",
+  "username": "pedri (EDITADO)",
+  "email": "bravo@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Pdl7f8sE+nGeNHQbN61vqw$6/SWFAgdR8kWTNnhzeITi4dpNV3lZlRxYNrJftI4fmo",
+  "role": "USER",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-21T01:43:57.508Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T01:01:39.124Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be6691e5db20e5660cf19a"
+  },
+  "name": "Elmer Santos",
+  "username": "esantos",
+  "email": "esantos@example.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$t0bkCEchxCtW82yzFYSiqQ$bLHwz/xxiCYxCsDjw0xFj/dlr/bhLVn/X+0hKyq8uDY",
+  "role": "USER",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-26T00:55:45.876Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T00:55:45.876Z"
   }
 }]

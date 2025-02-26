@@ -41,12 +41,25 @@
   "_id": {
     "$oid": "67b9098c84db191c7e0247fb"
   },
-  "name": "CATEGORY EDITED",
+  "name": "Category",
   "status": true,
   "createdAt": {
     "$date": "2025-02-21T23:17:32.671Z"
   },
   "updatedAt": {
-    "$date": "2025-02-21T23:19:26.314Z"
+    "$date": "2025-02-26T01:05:17.070Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67be6876e5db20e5660cf1ac"
+  },
+  "name": "Photos",
+  "status": false,
+  "createdAt": {
+    "$date": "2025-02-26T01:03:50.839Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-26T01:06:35.040Z"
   }
 }]
